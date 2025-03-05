@@ -1,5 +1,4 @@
 export function WatchedMovie({ movie, onDeletWatched }) {
- 
   return (
     <li>
       <img src={movie.poster} alt={`${movie.title} poster`} />
@@ -15,7 +14,7 @@ export function WatchedMovie({ movie, onDeletWatched }) {
         </p>
         <p>
           <span>⏳</span>
-          <span>{movie.runtime} min</span>
+          <span>{movie.runtime == null ? "--" : movie.runtime} min</span> 
         </p>
         <button
           className="btn-delete"

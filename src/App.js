@@ -92,7 +92,7 @@ export default function App() {
     setWatched((watched) => watched.filter((movie) => movie.imdbID !== id));
   }
 
-
+console.log(watched)
 
   return (
     <>
